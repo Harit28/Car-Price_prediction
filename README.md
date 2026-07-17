@@ -208,35 +208,23 @@ Laravel
 ```
 # Tampilan Aplikasi
 
-## 1. Halaman Login
-
-![Login](screenshots/login.png)
-
----
-
-## 2. Dashboard
+## 1. Dashboard
 
 ![Dashboard](screenshots/dashboard.png)
 
 ---
 
-## 3. Halaman Prediksi Harga Mobil
+## 2. Prediksi Harga Mobil
 
-![Prediction](screenshots/prediction.png)
-
----
-
-## 4. Hasil Prediksi
-
-![Result](screenshots/result.png)
+![Prediksi Harga Mobil](screenshots/Prediksi.png)
 
 ---
 
-## 5. Riwayat Prediksi
+## 3. Hasil Prediksi Harga Mobil
 
-![History](screenshots/history.png)
+![Hasil](screenshots/Prediksi.png)
 
----
+
 ---
 
 # Author
