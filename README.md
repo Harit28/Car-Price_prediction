@@ -216,13 +216,13 @@ Laravel
 
 ## 2. Prediksi Harga Mobil
 
-![Prediksi Harga Mobil](screenshots/Prediksi.png)
+![Prediksi](screenshots/Prediksi.png)
 
 ---
 
 ## 3. Hasil Prediksi Harga Mobil
 
-![Hasil](screenshots/Prediksi.png)
+![Hasil](screenshots/Hasil.png)
 
 
 ---
