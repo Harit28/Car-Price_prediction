@@ -206,7 +206,37 @@ Laravel
 │
 └── MySQL
 ```
+# Tampilan Aplikasi
 
+## 1. Halaman Login
+
+![Login](screenshots/login.png)
+
+---
+
+## 2. Dashboard
+
+![Dashboard](screenshots/dashboard.png)
+
+---
+
+## 3. Halaman Prediksi Harga Mobil
+
+![Prediction](screenshots/prediction.png)
+
+---
+
+## 4. Hasil Prediksi
+
+![Result](screenshots/result.png)
+
+---
+
+## 5. Riwayat Prediksi
+
+![History](screenshots/history.png)
+
+---
 ---
 
 # Author
