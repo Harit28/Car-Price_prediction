@@ -210,19 +210,19 @@ Laravel
 
 ## 1. Dashboard
 
-![Dashboard](screenshots/dashboard.png)
+![Dashboard](screenshots/dashboard.PNG)
 
 ---
 
 ## 2. Prediksi Harga Mobil
 
-![Prediksi](screenshots/Prediksi.png)
+![Prediksi](screenshots/Prediksi.PNG)
 
 ---
 
 ## 3. Hasil Prediksi Harga Mobil
 
-![Hasil](screenshots/Hasil.png)
+![Hasil](screenshots/Hasil.PNG)
 
 
 ---
