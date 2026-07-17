@@ -1,59 +1,218 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# Car Price Prediction System
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+## Deskripsi
+Car Price Prediction System merupakan aplikasi berbasis web yang digunakan untuk memprediksi harga mobil bekas menggunakan algoritma Machine Learning Random Forest Regression. Aplikasi dibangun menggunakan Laravel sebagai backend utama, React + Inertia.js sebagai frontend, serta Flask sebagai API untuk menjalankan model Machine Learning.
 
-## About Laravel
+---
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+# Bahasa Pemrograman
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+- PHP
+- JavaScript
+- Python
+- SQL
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+---
 
-## Learning Laravel
+# Framework, Library, API yang Digunakan
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework. You can also check out [Laravel Learn](https://laravel.com/learn), where you will be guided through building a modern Laravel application.
+## Backend
+- Laravel 12
+- Inertia.js
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+## Frontend
+- React.js
+- Tailwind CSS
+- Axios / Fetch API
 
-## Laravel Sponsors
+## Machine Learning
+- Python
+- Flask
+- Scikit-Learn
+- Pandas
+- NumPy
+- Joblib
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+## Database
+- MySQL
 
-### Premium Partners
+---
 
-- **[Vehikl](https://vehikl.com)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Redberry](https://redberry.international/laravel-development)**
-- **[Active Logic](https://activelogic.com)**
+# Algoritma Machine Learning
 
-## Contributing
+- Random Forest Regression
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+---
 
-## Code of Conduct
+# Fitur Aplikasi
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+✅ Login dan Register User
 
-## Security Vulnerabilities
+✅ Dashboard
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+✅ Prediksi Harga Mobil
 
-## License
+- Memilih nama mobil
+- Tahun kendaraan
+- Kilometer tempuh
+- Jenis bahan bakar
+- Seller Type
+- Transmission
+- Owner
+- Mileage
+- Engine
+- Max Power
+- Seats
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+✅ Integrasi Laravel dengan Flask API
+
+✅ Menampilkan hasil prediksi harga mobil
+
+✅ Menyimpan riwayat prediksi ke database
+
+---
+
+# Cara Menjalankan Project
+
+## Clone Repository
+
+```bash
+git clone (https://github.com/Harit28/Car-Price_prediction.git)
+```
+
+## Laravel
+
+```bash
+composer install
+cp .env.example .env
+php artisan key:generate
+php artisan migrate
+php artisan storage:link
+npm install
+npm run dev
+php artisan serve
+```
+
+## Flask API
+
+Masuk ke folder Flask
+
+```bash
+cd flask_api
+```
+
+Install library
+
+```bash
+pip install flask flask-cors pandas numpy scikit-learn joblib
+```
+
+Jalankan API
+
+```bash
+python app.py
+```
+
+---
+
+# Dataset
+
+Dataset diperoleh dari Kaggle:
+
+https://www.kaggle.com/datasets/sukhmandeepsinghbrar/car-price-prediction-dataset
+---
+
+# Penjelasan Dataset
+
+Dataset CarDekho merupakan dataset kendaraan bekas yang berasal dari marketplace mobil di India.
+
+Jumlah data:
+- ±8.100 data
+
+Target:
+- selling_price
+
+Fitur yang digunakan:
+
+- name
+- year
+- km_driven
+- fuel
+- seller_type
+- transmission
+- owner
+- mileage(km/ltr/kg)
+- engine
+- max_power
+- seats
+
+Dataset dibersihkan melalui proses preprocessing seperti:
+- Menghapus missing value
+- Konversi tipe data
+- Label Encoding pada data kategorikal
+
+---
+
+# Hasil Model
+
+Algoritma:
+- Random Forest Regression
+
+Evaluasi Model
+
+R² Score :
+
+0.924
+
+Artinya model mampu menjelaskan sekitar 92% variasi harga kendaraan pada dataset.
+
+---
+
+# Kelebihan Project
+
+- Tampilan modern menggunakan React dan Tailwind CSS.
+- Integrasi Laravel dengan Flask API.
+- Menggunakan Machine Learning Random Forest Regression.
+- Hasil prediksi dapat disimpan ke database.
+- Dropdown otomatis mengambil data dari model Machine Learning.
+- Struktur project dipisahkan antara frontend, backend, dan model ML.
+
+---
+
+# Kekurangan Project
+
+- Dataset berasal dari India sehingga harga masih mengikuti pasar India.
+- Hasil prediksi dikonversi ke Rupiah menggunakan kurs sehingga tidak mencerminkan harga pasar Indonesia secara akurat.
+- Model hanya menggunakan satu algoritma (Random Forest Regression).
+- Belum tersedia fitur visualisasi performa model secara lengkap.
+- Belum tersedia upload dataset baru untuk melakukan pelatihan ulang model.
+
+---
+
+# Struktur Project
+
+```
+Laravel
+│
+├── React (Frontend)
+│
+├── Prediction Controller
+│
+├── Flask API
+│      │
+│      ├── model.pkl
+│      ├── encoders.pkl
+│      └── app.py
+│
+└── MySQL
+```
+
+---
+
+# Author
+
+Nama : Harit Kusuma
+
+Instansi : Universitas PGRI Madiun
+
+Mata Kuliah : Kecerdasan Buatan
